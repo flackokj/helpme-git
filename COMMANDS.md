@@ -3,6 +3,9 @@ This repo contains nothing but a text file with helpfull little **git commands**
 
 ---
 
+### Create a new branch
+> Use ```git checkout -b [branch-name]``` if you wish to checkout to a new branch. You will also need to use ```git push --set-upstream origin [branch-name]``` to create the remote branch.
+
 ### View local branches only
 > Do you want to see all of your branches stored on your local machine? Use the ```git branch``` command.
 
