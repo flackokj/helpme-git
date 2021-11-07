@@ -22,5 +22,5 @@ This repo contains nothing but a text file with helpfull little **git commands**
 ```git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done```. This will delete your local branch if the remote does not exist anymore.
 
 ### Add tracked file/folder to gitignore
-> to gitignore a file/folder that already has been tracked, you must remove this file/folder from the tracked data with ```git rm --cached [file/folder]```. After this use the ```git add .``` followed with the ```git commit``` command to complete this process.
+> to gitignore a file/folder that already has been tracked, you must remove this file/folder from the tracked data with ```git rm -r --cached [file/folder]```. After this use the ```git add .``` followed with the ```git commit``` command to complete this process.
 
