@@ -20,3 +20,7 @@ This repo contains nothing but a text file with helpfull little **git commands**
 ### Delete local branches based on remote status
 > Sadly a local branch will still remain intact even after deleting your remote branch. This may or may not be what you want. If you wish to delete all the local branches based on the remote branch status, you can use 
 ```git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done```. This will delete your local branch if the remote does not exist anymore.
+
+### Add tracked file/folder to gitignore
+> to gitignore a file/folder that already has been tracked, you must remove this file/folder from the tracked data with ```git rm --cached [file/folder]```. After this use the ```git add .``` followed with the ```git commit``` command to complete this process.
+
